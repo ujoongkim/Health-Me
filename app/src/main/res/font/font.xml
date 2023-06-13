@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/dung"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/imc"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/kodi"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/kodir"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/kodib"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/jamsil"/>
+
+</font-family>

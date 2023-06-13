@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bmi_image"
+                android:layout_width="wrap_content"
+                android:layout_height="331dp"
+                android:layout_weight="1"
+                android:onClick="onBmiClicked"
+                android:clickable="true"
+                app:srcCompat="@drawable/mainback2"/>
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="40dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/save1"
+                android:clickable="true"
+                android:onClick="onSaveClicked"
+                android:text="" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/kodir"
+            android:textSize="19dp"
+            android:textColor="@color/gray"
+            android:text="\n \n \n저체중 ~ 18.5 \n\n정상 18.5 ~ 25.0 \n\n과체중 25.0 ~ 30.0 \n\n고도비만 30.0 ~ " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/BMI_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dung"
+            android:textSize="35dp"
+            android:typeface="serif"
+            android:text=""
+            android:background="#bdecff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/bmi_edit_age"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/dung"
+            android:hint="나이 입력"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="" />
+
+        <ToggleButton
+            android:id="@+id/bmi_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:fontFamily="@font/kodib"
+            android:textSize="16dp"
+            android:text="성별"
+            android:textOn="남자"
+            android:textOff="여자" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/bmi_edit_tall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/dung"
+            android:hint="키 입력"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:textColor="@color/gray"
+            android:textSize="20dp"
+            android:fontFamily="@font/kodib"
+            android:text="Cm" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/bmi_edit_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="체중 입력"
+            android:fontFamily="@font/dung"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:textColor="@color/gray"
+            android:textSize="20dp"
+            android:fontFamily="@font/kodib"
+            android:text="Kg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bmi_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:fontFamily="@font/kodib"
+            android:text="BMI 계산" />
+
+        <Button
+            android:id="@+id/bmi_btn_program"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16dp"
+
+            android:fontFamily="@font/kodib"
+            android:text="프로그램 보기" />
+    </LinearLayout>
+</LinearLayout>
